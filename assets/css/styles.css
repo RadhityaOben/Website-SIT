@@ -1,0 +1,164 @@
+.content {
+	min-height: 459px;
+}
+
+.cover {
+	object-fit: cover !important;
+}
+
+.fixed-top {
+	top : -400px !important;
+}
+
+.main-header .navbar .nav-item {
+	padding: 0 1em !important;
+}
+
+.carousel-inner {
+  height: 0;
+  padding-bottom: 50%; /* this sets carousel aspect ratio (4:1 here) */
+}
+
+.carousel-item {
+  position: absolute !important; /* Bootstrap is insistent */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.carousel-item img {
+  height: 100%; /* Bootstrap handles width already */
+  object-fit: cover; /* or 'contain' if you want stretch instead of crop */
+}
+
+.smaller-container {
+	padding: 0 !important;
+}
+
+.fixed-top-in {
+	transform : translateY(400px);
+	transition : transform 0.5s;
+}
+
+.fixed-top-out {
+	transform : translateY(-400px);
+	transition : transform 0.3s;
+}
+
+.btn-main-theme {
+	border: 1px black solid !important;
+	color: black !important;
+	border-radius: 5px;
+}
+
+.btn-main-theme:hover {
+	background-color: #025366 !important;
+	color: white !important;
+	border: 1px #025366 solid !important;
+	transition: ease 0.3s;
+}
+
+.main-header .nav-link.active{
+	background-color: #00A9C3 !important;
+	border: #00A9C3 1px solid !important;
+	border-radius: 5px;
+	margin: -2px !important;
+	color: white !important;
+}
+
+.main-header .nav-link.active:hover{
+	color: black !important;
+	transition: ease 0.3s;
+}
+
+.btn-secondary-theme {
+	border: 1px white solid !important;
+	color: white !important;
+	border-radius: 5px;
+}
+
+.btn-secondary-theme:hover {
+	background-color: #00A9C3 !important;
+	color: white !important;
+	border: 1px #00A9C3 solid !important;
+	transition: ease 0.3s;
+}
+
+.image-max-height {
+	max-height: 100px;
+}
+
+.custom-card {
+	height: 30rem !important;
+}
+
+.header {
+		background-color: #025366;
+		padding: 0 20px;
+		text-align: center;
+		border-radius: 5px 5px 0 0;
+}
+
+.headerScr {
+		background-color: #025366;
+		padding: 0 20px;
+		text-align: center;
+		position: fixed;
+}
+
+.underline {
+		background-color: #00A9C3;
+		width:	7em;
+		height: 5px;
+		border-radius: 100px;
+}
+
+.fillAja {
+		background-color: yellow;
+		height: 100px;
+}
+
+.contact {
+		background-color: #025366;
+		text-align: center;
+}
+
+.footer {
+		background-color: darkgray;
+		text-align: center;
+		height: 500px;
+}
+
+.img-detail {
+	max-height: 60rem !important;
+	max-width: 35rem !important;
+}
+
+@media screen and (max-width: 991px) {
+	.custom-card {
+		height: 40rem !important;
+	}
+
+}
+
+@media screen and (max-width: 1399px) {
+
+	.img-detail {
+		max-width: 30rem !important;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+
+	.img-detail {
+		max-width: 25rem !important;
+	}
+}
+
+@media screen and (max-width: 991px) {
+
+	.img-detail {
+		max-width: 30rem !important;
+	}
+}

@@ -1,0 +1,31 @@
+Options -Indexes
+
+DirectoryIndex index.php
+
+RewriteEngine on
+
+
+RewriteRule ^login$ login.php
+RewriteRule ^logout$ logout.php
+
+RewriteRule ^about-us$ php/about-us.php
+RewriteRule ^contact-us$ php/contact-us.php
+RewriteRule ^produk$ php/produk.php
+RewriteRule ^detail$ php/detail.php
+RewriteRule ^admin$ php/produk-list.php
+
+RewriteRule ^add$ php/add.php
+RewriteRule ^edit$ php/edit.php
+RewriteRule ^delete$ php/delete.php
+
+RewriteRule ^header$ section/header.php
+RewriteRule ^footer$ section/footer.php
+RewriteRule ^contact$ section/contact.php
+RewriteRule ^headerIndex$ section/headerIndex.php
+
+RewriteRule ^styles$ assets/styles.css
+RewriteRule ^script$ assets/script.js
+RewriteRule ^icon$ assets/icon/favicon.ico
+RewriteRule ^logo$ assets/img/logo.png
+
+RewriteRule ^function db/function.php
